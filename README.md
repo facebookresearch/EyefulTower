@@ -45,6 +45,18 @@ Total                                                                           
 * v2 with 3 fewer cameras than standard configuration, i.e. only 19 cameras.
 
 
+### Overview of scenes
+Example panoramas rendered from the extracted meshes:
+
+| apartment  | apartment (cont) | kitchen | office1 | office2 | office_view1 |
+| ---- | ---- | ---- | ---- | ---- | ---- |
+|   ![apartment](media/apartment_diffuse.png)   |  ![apartment](media/apartment_bedroom_diffuse.png) | ![kitchen](media/kitchen_diffuse.png) | ![office1](media/office1a_diffuse.png) | ![office2](media/office2_diffuse.png) | ![office_view1](media/office_view1_diffuse.png) |
+
+
+| office_view1 (cont) | office_view2 | riverview | seating_area | table | workshop |
+| ---- | ---- | ---- | ---- | ---- | ---- |
+| ![office_view1](media/office_view1_public_diffuse.png) |  ![office_view2](media/office_view2_diffuse.png) |  ![apartment](media/riverview_diffuse.png)   |  ![seating_area](media/seating_area_diffuse.png) | ![table](media/table_diffuse.png) | ![workshop](media/workshop_diffuse.png) |
+
 ## Download instructions
 
 The [Eyeful Tower dataset](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/index.html) is hosted on AWS S3, and can be explored with any browser or downloaded with standard software, such as [wget](https://www.gnu.org/software/wget/) or [curl](https://curl.se/).
