@@ -42,6 +42,7 @@ Scene                                                                           
 [table][table_index]               | v1  |  [9](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/table/images-jpeg-2k/collage.mp4)        | 134 | 1,206 |  [38&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/table/images-2k/index.html)        |  [26&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/table/images-jpeg/index.html)        |  [6&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/table/images-jpeg-4k/index.html)        | [2&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/table/images-jpeg-2k/index.html)
 [workshop][workshop_index]         | v1  |  [9](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/workshop/images-jpeg-2k/collage.mp4)     | 700 | 6,300 | [198&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/workshop/images-2k/index.html)     | [123&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/workshop/images-jpeg/index.html)     | [27&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/workshop/images-jpeg-4k/index.html)     | [8&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/workshop/images-jpeg-2k/index.html)
 Total                                                                                                                     |     |                                                                                                                                 |     |       |  904&nbsp;GB                                                                                                                       |  636&nbsp;GB                                                                                                                         | 135&nbsp;GB                                                                                                                            | 37&nbsp;GB
+
 \* v2 with 3 fewer cameras than standard configuration, i.e. only 19 cameras.
 
 [apartment_index]: https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/apartment/index.html
@@ -75,6 +76,12 @@ Example images selected from each dataset:
 | [seating_area][seating_area_index] | [table][table_index] | [workshop][workshop_index] |
 |:-:|:-:|:-:|
 | [![seating_area](media/seating_area_7_REN0109.jpg)][seating_area_index] | [![table](media/table_6_DSC0289.jpg)][table_index] | [![workshop](media/workshop_5_REN1378.jpg)][workshop_index] |
+
+## Capture Rig
+
+All images in the dataset were taken with either Eyeful Tower V1 or V2 (as specified in [the overview table](#dataset-overview)). Eyeful Tower V1 comprises 9 fisheye cameras, whereas Eyeful Tower V2 comprises 22 pinhole cameras.
+
+![Eyeful Tower Version Comparison](media/eyeful_tower.jpg)
 
 ## Download instructions
 
