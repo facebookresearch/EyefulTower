@@ -44,11 +44,8 @@ Scene                                                                           
 Total                                                                                                                     |     |                                                                                                                                 |     |       |  904&nbsp;GB                                                                                                                       |  636&nbsp;GB                                                                                                                         | 135&nbsp;GB                                                                                                                            | 37&nbsp;GB
 * v2 with 3 fewer cameras than standard configuration, i.e. only 19 cameras.
 
-
-### Overview of scenes
-Example panoramas rendered from the extracted meshes:
-
-![workshop](media/panorama.png) |
+![panorama](media/panorama.png)
+* Here we show example panoramas rendered from the extracted meshes.
 
 ## Download instructions
 
