@@ -64,10 +64,10 @@ Example images selected from each dataset:
 <table>
 <thead>
   <tr>
-    <th>apartment</th>
-    <th>kitchen</th>
-    <th>office1a</th>
-    <th>office1b</th>
+    <th><a href="https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/apartment/index.html">apartment</a></th>
+    <th><a href="https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/kitchen/index.html">kitchen</a></th>
+    <th><a href="https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/office1a/index.html">office1a</a></th>
+    <th><a href="https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/office1b/index.html">office1b</a></th>
   </tr>
 </thead>
 <tbody>
@@ -83,10 +83,10 @@ Example images selected from each dataset:
 <table>
 <thead>
   <tr>
-    <th>office2</th>
-    <th>office_view1</th>
-    <th>office_view2</th>
-    <th>riverview</th>
+    <th><a href="https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/office2/index.html">office2</a></th>
+    <th><a href="https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/office_view1/index.html">office_view1</a></th>
+    <th><a href="https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/office_view2/index.html">office_view2</a></th>
+    <th><a href="https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/riverview/index.html">riverview</a></th>
   </tr>
 </thead>
 <tbody>
@@ -102,9 +102,9 @@ Example images selected from each dataset:
 <table>
 <thead>
   <tr>
-    <th>seating_area</th>
-    <th>table</th>
-    <th>workshop</th>
+    <th><a href="https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/seating_area/index.html">seating_area</a></th>
+    <th><a href="https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/table/index.html">table</a></th>
+    <th><a href="https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/workshop/index.html">workshop</a></th>
   </tr>
 </thead>
 <tbody>
