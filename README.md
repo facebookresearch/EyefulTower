@@ -59,8 +59,6 @@ Total                                                                           
 
 ## Example Images
 
-Example images selected from each dataset:
-
 <table>
 <thead>
   <tr>
