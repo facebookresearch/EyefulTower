@@ -61,17 +61,60 @@ Total                                                                           
 
 Example images selected from each dataset:
 
-| [apartment][apartment_index] | [kitchen][kitchen_index] | [office1a][office1a_index] | [office1b][office1b_index] |
-|:-:|:-:|:-:|:-:|
-| [![apartment](media/apartment_21_DSC0226.jpg)][apartment_index] | [![kitchen](media/kitchen_20_DSC0802.jpg)][kitchen_index]  | [![office1a](media/office1a_7_REN0253.jpg)][office1a_index]  | [![office1b](media/office1b_25_DSC0109.jpg)][office1b_index] |
+<table>
+<thead>
+  <tr>
+    <th>apartment</th>
+    <th>kitchen</th>
+    <th>office1a</th>
+    <th>office1b</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td width="25%"> <a href="https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/apartment/index.html"> <img src="media/apartment_21_DSC0226.jpg" alt="apartment" alt="apartment"> </a> </td>
+    <td width="25%"> <a href="https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/kitchen/index.html"> <img src="media/kitchen_20_DSC0802.jpg" alt="kitchen" alt="kitchen"> </a> </td>
+    <td width="25%"> <a href="https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/office1a/index.html"> <img src="media/office1a_7_REN0253.jpg" alt="office1a" alt="office1a"> </a> </td>
+    <td width="25%"> <a href="https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/office1b/index.html"> <img src="media/office1b_25_DSC0109.jpg" alt="office1b" alt="office1b"> </a> </td>
+  </tr>
+</tbody>
+</table>
 
-| [office2][office2_index] | [office_view1][office_view1_index] | [office_view2][office_view2_index] | [riverview][riverview_index] |
-|:-:|:-:|:-:|:-:|
-| [![office2](media/office2_7_DSC0037.jpg)][office2_index] | [![office_view1](media/office_view1_22_DSC0379.jpg)][office_view1_index] | [![office_view2](media/office_view2_23_DSC0001.jpg)][office_view2_index] | [![riverview](media/riverview_23_DSC0028.jpg)][riverview_index] |
+<table>
+<thead>
+  <tr>
+    <th>office2</th>
+    <th>office_view1</th>
+    <th>office_view2</th>
+    <th>riverview</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td width="25%"> <a href="https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/office2/index.html"> <img src="media/office2_7_DSC0037.jpg" alt="office2" alt="office2"> </a> </td>
+    <td width="25%"> <a href="https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/office_view1/index.html"> <img src="media/office_view1_22_DSC0379.jpg" alt="office_view1" alt="office_view1"> </a> </td>
+    <td width="25%"> <a href="https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/office_view2/index.html"> <img src="media/office_view2_23_DSC0001.jpg" alt="office_view2" alt="office_view2"> </a> </td>
+    <td width="25%"> <a href="https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/riverview/index.html"> <img src="media/riverview_23_DSC0028.jpg" alt="riverview" alt="riverview"> </a> </td>
+  </tr>
+</tbody>
+</table>
 
-| [seating_area][seating_area_index] | [table][table_index] | [workshop][workshop_index] |
-|:-:|:-:|:-:|
-| [![seating_area](media/seating_area_7_REN0109.jpg)][seating_area_index] | [![table](media/table_6_DSC0289.jpg)][table_index] | [![workshop](media/workshop_5_REN1378.jpg)][workshop_index] |
+<table>
+<thead>
+  <tr>
+    <th>seating_area</th>
+    <th>table</th>
+    <th>workshop</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td width="33%"> <a href="https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/seating_area/index.html"> <img src="media/seating_area_7_REN0109.jpg" alt="seating_area" alt="seating_area"> </a> </td>
+    <td width="33%"> <a href="https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/table/index.html"> <img src="media/table_6_DSC0289.jpg" alt="table" alt="table"> </a> </td>
+    <td width="33%"> <a href="https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/workshop/index.html"> <img src="media/workshop_5_REN1378.jpg" alt="workshop" alt="workshop"> </a> </td>
+  </tr>
+</tbody>
+</table>
 
 ## Capture Rig
 
