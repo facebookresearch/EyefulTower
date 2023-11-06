@@ -59,10 +59,6 @@ Total                                                                           
 
 ## Example Images
 
-Example panoramas rendered from extracted meshes:
-
-![panorama](media/panorama.png)
-
 Example images selected from each dataset:
 
 | [apartment][apartment_index] | [kitchen][kitchen_index] | [office1a][office1a_index] | [office1b][office1b_index] |
@@ -97,6 +93,9 @@ Alternatively, use “`sync`” to avoid transfering existing files:
 ```
 aws s3 sync --no-sign-request s3://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15/EyefulTower/apartment/images-jpeg-2k/ apartment/images-jpeg-2k/
 ```
+
+For those interested in experimenting with specific cameras, we recommend viewing the [collage video](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/apartment/images-jpeg-2k/collage.mp4) first. This will help you identify which camera views you'd like to utilize. For example, for this apartment scene using the v2 capture rig, you might consider camera IDs 19, 20, 21 which are placed at the same height (see).
+
 
 ### Download all scenes (2K JPEGs only) using bash — 37 GB
 ```bash
