@@ -21,7 +21,8 @@
 
   <p align="center" style="margin: 2em auto;">
     <a href='https://vr-nerf.github.io' style='padding-left: 0.5rem;'><img src='https://img.shields.io/badge/VR--NeRF-Project_page-orange?style=flat&logo=googlecardboard&logoColor=orange' alt='Project Page'></a>
-    <!--<a href='https://dl.acm.org/doi/10.1145/3592106'><img src='https://img.shields.io/badge/Paper-PDF-green?style=flat&logo=arXiv&logoColor=green' alt='Paper PDF'></a>
+    <a href='https://arxiv.org/abs/2311.02542'><img src='https://img.shields.io/badge/arXiv-Paper_PDF-red?style=flat&logo=arXiv&logoColor=green' alt='Paper PDF'></a>
+    <!--<a href='https://dl.acm.org/doi/10.1145/3592106'><img src='https://img.shields.io/badge/Paper-PDF-green?style=flat&logo=arXiv&logoColor=green' alt='DOI'></a>
     <a href='https://youtu.be/GdvxgsITZOw'><img src='https://img.shields.io/badge/YouTube-Video-red?style=flat&logo=YouTube&logoColor=red' alt='YouTube Video'></a>-->
   </p>
 </div>
