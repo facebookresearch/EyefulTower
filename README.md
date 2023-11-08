@@ -230,6 +230,10 @@ cv2.imwrite("apartment-17_DSC0316.jpg", img, params=[cv2.IMWRITE_JPEG_QUALITY, 1
 
 ### JPEG images (`images-jpeg*/{camera}/*.jpg`)
 
+* We provide images at three resolution levels:
+  1. `images-jpeg/`: 5784 × 8660 = 50. megapixels — full original image resolution
+  2. `images-jpeg-4k/`: 2736 × 4096 = 11.2 megapixels
+  3. `images-jpeg-2k/`: 1368 × 2048 = 2.8 megapixels
 * The JPEG images are white-balanced and tone-mapped versions of the HDR images.
 See the code above for the details.
 * Each scene uses white-balance settings derived from the ColorChecker that individually scale the RGB channels as follows:
