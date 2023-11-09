@@ -131,7 +131,7 @@ However, for the fastest, most reliable download, we recommend using the AWS com
 ```
 aws s3 cp --recursive --no-sign-request s3://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15/EyefulTower/apartment/images-jpeg-2k/ apartment/images-jpeg-2k/
 ```
-Alternatively, use “`sync`” to avoid transfering existing files:
+Alternatively, use “`sync`” to avoid transferring existing files:
 ```
 aws s3 sync --no-sign-request s3://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15/EyefulTower/apartment/images-jpeg-2k/ apartment/images-jpeg-2k/
 ```
