@@ -22,10 +22,11 @@
   <p align="center" style="margin: 2em auto;">
     <a href='https://vr-nerf.github.io' style='padding-left: 0.5rem;'><img src='https://img.shields.io/badge/VR--NeRF-Project_page-orange?style=flat&logo=googlecardboard&logoColor=orange' alt='Project Page'></a>
     <a href='https://arxiv.org/abs/2311.02542'><img src='https://img.shields.io/badge/arXiv-Paper_PDF-red?style=flat&logo=arXiv&logoColor=green' alt='Paper PDF'></a>
-    <!--<a href='https://dl.acm.org/doi/10.1145/3592106'><img src='https://img.shields.io/badge/Paper-PDF-green?style=flat&logo=arXiv&logoColor=green' alt='DOI'></a>
-    <a href='https://youtu.be/GdvxgsITZOw'><img src='https://img.shields.io/badge/YouTube-Video-red?style=flat&logo=YouTube&logoColor=red' alt='YouTube Video'></a>-->
+    <!--<a href='https://dl.acm.org/doi/10.1145/3592106'><img src='https://img.shields.io/badge/Paper-PDF-green?style=flat&logo=arXiv&logoColor=green' alt='DOI'></a>-->
+    <a href='https://youtu.be/9Q8_FssFQP4'><img src='https://img.shields.io/badge/YouTube-Video-red?style=flat&logo=YouTube&logoColor=red' alt='YouTube Video'></a>
   </p>
 </div>
+
 
 ## Dataset Overview
 
@@ -57,6 +58,7 @@ Total                                                                           
 [seating_area_index]: https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/seating_area/index.html
 [table_index]: https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/table/index.html
 [workshop_index]: https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/workshop/index.html
+
 
 ## Example Images
 
@@ -115,17 +117,26 @@ Total                                                                           
 </tbody>
 </table>
 
+
 ## Capture Rig
 
-All images in the dataset were taken with either Eyeful Tower V1 or V2 (as specified in [the overview table](#dataset-overview)). Eyeful Tower V1 comprises 9 fisheye cameras, whereas Eyeful Tower V2 comprises 22 pinhole cameras.
+All images in the dataset were taken with either Eyeful Tower v1 or v2 (as specified in [the overview table](#dataset-overview)).
+Eyeful Tower v1 comprises 9 fisheye cameras, whereas Eyeful Tower v2 comprises 22 pinhole cameras (19 for “kitchen”).
 
 ![Eyeful Tower Version Comparison](media/eyeful_tower.jpg)
+
 
 ## Download instructions
 
 The [Eyeful Tower dataset](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/index.html) is hosted on AWS S3, and can be explored with any browser or downloaded with standard software, such as [wget](https://www.gnu.org/software/wget/) or [curl](https://curl.se/).
 
 However, for the fastest, most reliable download, we recommend using the AWS command line interface (AWS CLI), see [AWS CLI installation instructions](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html).
+
+**Optional:** Speed up downloading by increasing the number of concurrent downloads from 10 to 100:
+```
+aws configure set default.s3.max_concurrent_requests 100
+```
+
 
 ### Download a single scene (2K JPEGs only)
 ```
@@ -136,7 +147,7 @@ Alternatively, use “`sync`” to avoid transferring existing files:
 aws s3 sync --no-sign-request s3://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15/EyefulTower/apartment/images-jpeg-2k/ apartment/images-jpeg-2k/
 ```
 
-For those interested in experimenting with specific cameras, we recommend viewing the [collage video](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/apartment/images-jpeg-2k/collage.mp4) first. This will help you identify which camera views you'd like to utilize. For example, for this apartment scene using the v2 capture rig, you might consider camera IDs 19, 20, 21 which are placed at the same height (see).
+For those interested in experimenting with specific cameras, we recommend viewing the [collage video](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/apartment/images-jpeg-2k/collage.mp4) first. This will help you identify which camera views you'd like to utilize. For example, for this apartment scene using the v2 capture rig, you might consider camera IDs 19, 20, 21 which are placed at the same height.
 
 
 ### Download all scenes (2K JPEGs only) using bash — 37 GB
@@ -147,10 +158,12 @@ for dataset in apartment kitchen office1a office1b office2 office_view1 office_v
 done
 ```
 
+
 ### Download the entire Eyeful Tower dataset — 1.7 TB
 ```
 aws s3 cp --recursive --no-sign-request s3://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15/EyefulTower/ .
 ```
+
 
 ## Data Organization
 
@@ -190,7 +203,7 @@ apartment
 └── splits.json              # Training/testing splits
 ```
 
-### HDR images (`images-2k/{camera}/*.exr`)
+
 
 * High dynamic range images merged from 9-photo raw exposure brackets.
 * Downsampled to “2K” resolution (1368×2048 pixels).
@@ -236,7 +249,7 @@ cv2.imwrite("apartment-17_DSC0316.jpg", img, params=[cv2.IMWRITE_JPEG_QUALITY, 1
   3. `images-jpeg-2k/`: 1368 × 2048 = 2.8 megapixels
 * The JPEG images are white-balanced and tone-mapped versions of the HDR images.
 See the code above for the details.
-* Each scene uses white-balance settings derived from the ColorChecker that individually scale the RGB channels as follows:
+* Each scene uses white-balance settings derived from a ColorChecker, which individually scale the RGB channels as follows:
 
   Scene        |      RGB scale factors
   ------------ | :------------------------:
