@@ -122,7 +122,7 @@ Total                                        |     |                            
 </table>
 
 
-**April 2024:** The following two datasets accompany our paper [Real Acoustic Fields](https://github.com/facebookresearch/real-acoustic-fields) (CVPR 2024):
+**April 2024:** The following two scenes accompany our paper [Real Acoustic Fields](https://github.com/facebookresearch/real-acoustic-fields) (CVPR 2024):
 
 <table width="50%">
 <thead>
@@ -181,7 +181,7 @@ done
 ```
 
 
-### Download the entire Eyeful Tower dataset — 1.9 TB
+### Download the entire Eyeful Tower dataset — 3.5 TB
 ```
 aws s3 sync --no-sign-request s3://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15/EyefulTower/ .
 ```
@@ -196,6 +196,12 @@ apartment
 ├── apartment-final.pdf      # Metashape reconstruction report
 ├── cameras.json             # Camera poses in KRT format (see below)
 ├── cameras.xml              # Camera poses exported from Metashape
+├── colmap                   # COLMAP reconstruction exported from Metashape
+│   ├── images               # Undistorted images (full resolution)
+│   ├── images_2             # Undistorted images (1/2 resolution)
+│   ├── images_4             # Undistorted images (1/4 resolution)
+│   ├── images_8             # Undistorted images (1/8 resolution)
+│   └── sparse               # COLMAP reconstruction (for full-res images)
 ├── images-1k                # HDR images at 1K resolution
 │   ├── 10                   # First camera (bottom-most camera)
 │   │   ├── 10_DSC0001.exr   # First image
@@ -337,6 +343,14 @@ World coordinate system: right-handed, y-up, `y=0` is ground plane, units are in
 * World coordinate system: right-handed, y-up, `y=0` is ground plane, units are in meters.
 
 
+### Exported COLMAP reconstruction (`colmap/`)
+
+These [COLMAP](https://colmap.github.io/) reconstructions are exported from our original reconstructions using Metashape 2.1.3 with default parameters.
+* The images under `colmap/images` were automatically undistorted from the images in `images-jpeg` to pinhole projections with principal point at image center.
+* Note that this undistortion severely crops fisheye images, and tends to produce different image sizes for different cameras.
+* The images in `colmap/images-*` are downsampled versions of the full-resolution undistorted images, similar to the [Mip-NeRF 360](https://jonbarron.info/mipnerf360/) dataset format.
+
+
 ### Training/testing splits (`splits.json`)
 
 * Contains lists of images for training (`"train"`) and testing (`"test"`).
@@ -348,6 +362,7 @@ World coordinate system: right-handed, y-up, `y=0` is ground plane, units are in
 * **3 Nov 2023** – initial dataset release
 * **18 Jan 2024** – added “1K” resolution (684×1024 pixels) EXRs and JPEGs for small-scale experimentation.
 * **19 Apr 2024** – added two rooms from [Real Acoustic Fields (RAF)](https://github.com/facebookresearch/real-acoustic-fields) dataset: [`raf_emptyroom`][raf_emptyroom_index] and [`raf_furnishedroom`][raf_furnishedroom_index].
+* **9 Oct 2024** – added exported COLMAP reconstructions with undistorted images in the Mip-NeRF 360 format, e.g. compatible with [gsplat](https://github.com/nerfstudio-project/gsplat).
 
 
 ## Citation
